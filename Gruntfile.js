@@ -16,6 +16,7 @@ module.exports = function (grunt) {
 
 	grunt.initConfig({
 		clean: {
+			media: ['./media'],
 			tmp: ['./tmp'],
 			test: ['./test/tmp']
 		},
@@ -50,11 +51,21 @@ module.exports = function (grunt) {
 		}
 	});
 
+	var assert = require('assert');
+
+	function assertFile(target) {
+		assert(!!grunt.file.exists(target), 'expected file: "' + target + '" to exist');
+	}
+
+	grunt.registerTask('verify', function () {
+		assertFile('./media/repo.png');
+	});
+
 	grunt.registerTask('prep', ['clean', 'jshint']);
 	grunt.registerTask('build', ['prep']);
 
 	grunt.registerTask('pass', ['webshot:repo']);
 
-	grunt.registerTask('test', ['build', 'pass']);
+	grunt.registerTask('test', ['build', 'pass', 'verify']);
 	grunt.registerTask('default', ['test']);
 };
