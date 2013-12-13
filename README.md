@@ -74,3 +74,7 @@ grunt.initConfig({
 Contributions are very welcome, please leave a [ticket](https://github.com/Bartvds/grunt-webshot/issues) before doing something major.
 
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Bartvds/grunt-webshot/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
