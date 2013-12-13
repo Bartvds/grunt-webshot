@@ -6,7 +6,7 @@
 
 A simple (naïve) wrapper for [webshot](https://github.com/brenden/node-webshot/) that uses phantomJS to render webpages to various image formats.
 
-For example generate preview images of your project to send to clients, link in the documentation or get creative with the browser rendering engine: webshot has some interesting features like offsets, timers and a 'trigger' callback.
+For example generate preview images of your project to send to clients, link in the documentation or get creative with the browser rendering engine. Use webshot features like offsets, timers and a 'trigger' callback.
 
 ## Getting Started
 
@@ -28,13 +28,13 @@ grunt.loadNpmTasks('grunt-webshot');
 
 ### Options
 
-Most options are passed directly tot the screenshot command: [webshot](https://github.com/brenden/node-webshot/) for supported options.
-
 The `grunt-webshot` specific options are:
 
-Required `site` and `savePath` are passed to screenshot method.
+* Required `site` and `savePath` are passed to screenshot method.
+* Additional the `siteType` option supports a new property `'file'` that will treat the behaviour of the `'site'` options as the file path to read as html. 
 
-Additional the `siteType` option supports a new property `'file'` that will treat the behaviour of the `'site'` options as the file path to read as html. 
+
+All other options are passed directly to the webshot screenshot command: see [the  documentation](https://github.com/brenden/node-webshot/) for supported options.
 
 ```js
 grunt.initConfig({
