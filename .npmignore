@@ -3,10 +3,12 @@
 .gitmodules
 .travis.yml
 .jshintrc
+.editorconfig
 bower.json
 Gruntfile.js
 
 /.idea
 /node_modules
+/media
 /test
 /*.tgz
