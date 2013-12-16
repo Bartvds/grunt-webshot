@@ -1,6 +1,6 @@
 {
   "name": "grunt-webshot",
-  "description": "Render screenshots of websites and local html using phantomjs",
+  "description": "Render screenshots of webpages and local html",
   "version": "0.0.1",
   "homepage": "https://github.com/Bartvds/grunt-webshot",
   "author": {
@@ -36,7 +36,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "webshot": "~0.5.4"
+    "webshot": "~0.8.0"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.7.2",

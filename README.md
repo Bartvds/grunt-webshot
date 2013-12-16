@@ -1,12 +1,12 @@
 # grunt-webshot
 
-> Grunt [plugin](http://gruntjs.com/) to run [webshot](https://github.com/brenden/node-webshot/) and take screenshots of websites and local html.
+> Grunt [plugin](http://gruntjs.com/) to run [webshot](https://github.com/brenden/node-webshot/) and take screenshots of webpages and local html.
 
 [![Build Status](https://secure.travis-ci.org/Bartvds/grunt-webshot.png?branch=master)](http://travis-ci.org/Bartvds/grunt-webshot) [![Dependency Status](https://gemnasium.com/Bartvds/grunt-webshot.png)](https://gemnasium.com/Bartvds/grunt-webshot) [![NPM version](https://badge.fury.io/js/grunt-webshot.png)](http://badge.fury.io/js/grunt-webshot)
 
 A simple (naïve) wrapper for [webshot](https://github.com/brenden/node-webshot/) that uses phantomJS to render webpages to various image formats.
 
-For example generate preview images of your project to send to clients, link in the documentation or get creative with the browser rendering engine. Use webshot features like offsets, timers and a 'trigger' callback.
+For example generate preview images of your project to send to clients, update screenshots for your documentation or get creative with the browser rendering engine. Use webshot features like offsets, timers and a 'trigger' callback for interesting setups.
 
 ## Getting Started
 
@@ -67,6 +67,7 @@ grunt.initConfig({
 
 ## History
 
+* 0.0.2 - Updated dependency
 * 0.0.1 - First release
 
 ## Contributing
