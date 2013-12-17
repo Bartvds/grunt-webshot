@@ -31,13 +31,27 @@ module.exports = function (grunt) {
 			]
 		},
 		webshot: {
-			// example
 			repo: {
 				options: {
 					// url, file or html
 					siteType: 'url',
 					site: 'https://github.com/Bartvds/grunt-webshot/blob/master/media/repo.png',
 					savePath: './media/repo.png',
+					windowSize: {
+						width: 1024,
+						height: 400
+					},
+					shotSize: {
+						width: 1024,
+						height: 'all'
+					}
+				}
+			},
+			file: {
+				options: {
+					siteType: 'file',
+					site: 'test/lorem.html',
+					savePath: './tmp/lorem.png',
 					windowSize: {
 						width: 1024,
 						height: 400
@@ -64,7 +78,7 @@ module.exports = function (grunt) {
 	grunt.registerTask('prep', ['clean', 'jshint']);
 	grunt.registerTask('build', ['prep']);
 
-	grunt.registerTask('pass', ['webshot:repo']);
+	grunt.registerTask('pass', ['webshot:repo', 'webshot:file']);
 
 	grunt.registerTask('test', ['build', 'pass', 'verify']);
 	grunt.registerTask('default', ['test']);

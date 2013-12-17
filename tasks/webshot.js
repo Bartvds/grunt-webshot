@@ -36,16 +36,10 @@ module.exports = function (grunt) {
 		delete options.site;
 		delete options.savePath;
 
-		// hacky support files
-		if (options.siteType === 'file') {
-			site = grunt.file.read(site);
-			options.siteType = 'html';
-		}
-
 		// lets go
 		webshot(site, savePath, options, function(err) {
 			if (err) {
-				grunt.fail.warn('undefined target');
+				grunt.log.writeln('webshot error:');
 				grunt.fail.warn(err);
 				done(false);
 			}
