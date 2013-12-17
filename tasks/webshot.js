@@ -9,7 +9,7 @@
 module.exports = function (grunt) {
 	'use strict';
 
-	grunt.registerMultiTask('webshot', 'Render screenshots of websites', function() {
+	grunt.registerMultiTask('webshot', 'Render screenshots of webpages', function() {
 		var options = this.options({
 			site: null,
 			savePath: null

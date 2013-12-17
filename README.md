@@ -30,11 +30,9 @@ grunt.loadNpmTasks('grunt-webshot');
 
 The `grunt-webshot` specific options are:
 
-* Required `site` and `savePath` are passed to screenshot method.
-* Additional the `siteType` option supports a new property `'file'` that will treat the behaviour of the `'site'` options as the file path to read as html. 
+* Required `site` and `savePath` are used as arguments to call the webshot method.
 
-
-All other options are passed directly to the webshot screenshot command: see [the  documentation](https://github.com/brenden/node-webshot/) for supported options.
+All other options are passed directly as webshot options: see [the  documentation](https://github.com/brenden/node-webshot/) for supported options.
 
 ```js
 grunt.initConfig({
@@ -67,6 +65,7 @@ grunt.initConfig({
 
 ## History
 
+* 0.0.3 - Updated to webshot 0.8.1, dorppe down siteType:file
 * 0.0.2 - Updated dependency
 * 0.0.1 - First release
 
