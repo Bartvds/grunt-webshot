@@ -39,19 +39,18 @@ grunt.initConfig({
 	webshot: {
 		// example
 		homepage: {
-				options: {
-					// url, file or html
-					siteType: 'url',
-					site: 'https://github.com/Bartvds/grunt-webshot',
-					savePath: './tmp/shot.png',
-					windowSize: {
-						width: 1024,
-						height: 768
-					},
-					shotSize: {
-						width: 1024,
-						height: 'all'
-					}
+			options: {
+				// url, file or html
+				siteType: 'url',
+				site: 'https://github.com/Bartvds/grunt-webshot',
+				savePath: './tmp/shot.png',
+				windowSize: {
+					width: 1024,
+					height: 768
+				},
+				shotSize: {
+					width: 1024,
+					height: 'all'
 				}
 			}
 		}
