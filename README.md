@@ -32,7 +32,7 @@ The `grunt-webshot` specific options are:
 
 * Required `site` and `savePath` are used as arguments to call the webshot method.
 
-All other options are passed directly as webshot options: see [the  documentation](https://github.com/brenden/node-webshot/) for supported options.
+All other options are passed directly to webshot: see [the  documentation](https://github.com/brenden/node-webshot/) for a list of supported options.
 
 ```js
 grunt.initConfig({
@@ -59,13 +59,9 @@ grunt.initConfig({
 });
 ```
 
-## Known problems
-
-* Doesn't work well with large size local html (or file). I'm looking into a fix.
-
 ## History
 
-* 0.0.3 - Updated to webshot 0.8.1, dorppe down siteType:file
+* 0.0.3 - Updated to webshot 0.8.1 (supports siteType:file), dropped own hack
 * 0.0.2 - Updated dependency
 * 0.0.1 - First release
 
