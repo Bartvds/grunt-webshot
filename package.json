@@ -1,7 +1,7 @@
 {
   "name": "grunt-webshot",
   "description": "Render screenshots of webpages and local html",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "homepage": "https://github.com/Bartvds/grunt-webshot",
   "author": {
     "name": "Bart van der Schoor",
@@ -36,7 +36,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "webshot": "~0.8.1"
+    "webshot": "~0.9.1s"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.7.2",
