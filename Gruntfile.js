@@ -5,6 +5,7 @@
  * Copyright (c) 2013 Bart van der Schoor
  * Licensed under the MIT license.
  */
+ 
 
 module.exports = function (grunt) {
 	'use strict';
